@@ -1,8 +1,7 @@
 # Processo seletivo Sersorville
 **Autor**: Andre Prasel
 
-**Objetivo**: contar um pouco sobre minha trajetória pessoal, familiar
-e profissional.
+**Objetivo**: contar um pouco sobre minha trajetória pessoal e profissional.
 
 **Resumo**: site feito com o framework Django, carregando templates HTML e arquivos
 estáticos CSS e JavaScript.
@@ -11,7 +10,7 @@ estáticos CSS e JavaScript.
 
 ## Como usar o site
 Como o site usa o framework Django para o seu funcionamento, é importante
-que o ele esteja instalado. Para isso recomendo os seguintes passos:
+que ele esteja instalado. Para isso recomendo os seguintes passos:
 
 1. Iniciar um ambiente virtual python: isso evita que as dependências
 sejam instaladas de forma global na máquina. Assim, navegue até a pasta do projeto
@@ -72,9 +71,9 @@ da microsoft, o Visual Studio Code, juntamente do git para fazer o versionamento
 
 ## Percepções sobre o processo de construção
 
-Quero destacar aqui algumas percepções que tive durante a construção do site. Considero isso uma parte importante para a construção de algo e também
+Quero destacar aqui algumas percepções que tive durante a construção do site. Considero isso uma parte importante para o desenvolvimento do projeto e também
 para o aprendizado. Identificar os pontos fortes e fracos pode não ser muito fácil, 
-mas pode ser tornar um grande aliado. Dessa forma, aponto os seguintes pontos:
+mas pode ser tornar um grande aliado. Dessa forma, apresento os seguintes pontos:
 
 * Certo domínio na construção e manipulação da base do projeto, ou seja, 
 na organização dos arquivos e saber o que alterar da base 
