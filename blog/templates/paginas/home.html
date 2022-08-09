@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{%block 'titulo'%}
+    <title>HOME</title>
+{%endblock%}
+
+{%block 'style'%}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <style>
+        #sobre-mim {
+            background-color: #e5e9f0;
+        }
+    </style>
+{%endblock%}
+
+{%block 'script'%}
+    <script src="{% static 'scripts/home.js' %}" defer></script>
+{%endblock%}
+
+{%block 'conteudo'%}
+    <div class="banner">
+        <img src="{% static 'img/home/banner.png' %}" alt="Banner">
+    </div>
+    <div class="sobre_mim">
+        <div class="imgBx">
+            <img src="{% static 'img/home/eu-colorido.jpeg' %}" alt="Foto minha">
+        </div>
+        <div class="conteudo">
+            <h2>Sobre mim</h2>
+            <p>Olá, me chamo André Prasel e tenho 21 anos. Sou estudante de 
+                Engenharia Elétrica na UTFPR, apaixonado por tecnologia e adoro
+                aprender coisas novas. 
+            </p>
+        </div>
+    </div>
+    <div class="blocos">
+        <section class="card">
+            <h2>Hard Skills</h2>
+            <ul>
+                <li>Python 3</li>
+                <li>Linguagem C</li>
+                <li>MATLAB</li>
+                <li>Banco de dados relacionais</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Soft Skills</h2>
+            <ul>
+                <li>Aprendizado rápido</li>
+                <li>Flexibilidade</li>
+                <li>Trabalho em equipe</li>
+                <li>Organização</li>
+            </ul>
+        </section>
+    </div>
+    <div class="botao">
+        <button type="button" id="scrollTop" title="Voltar ao início">
+            <img src="{% static 'img/home/scrollUp.svg' %}" alt="Voltar ao início">
+        </button>
+    </div>
+{%endblock%}

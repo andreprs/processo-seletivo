@@ -1,0 +1,83 @@
+{%extends 'base.html'%}
+{% load static %}
+
+{%block 'titulo'%}
+    <title>Trajetória pessoal</title>
+{%endblock%}
+
+{%block 'style'%}
+    <link rel="stylesheet" href="{% static 'css/traj_pessoal.css' %}">
+    <style>
+        #traj-pessoal {
+            background-color: #e5e9f0;
+        }
+    </style>
+{%endblock%}
+
+{%block 'script'%}
+    <script src="{% static 'scripts/slider.js' %}" defer></script>
+{%endblock%}
+
+{%block 'conteudo'%}
+
+    <div>
+        <img src="{% static 'img/traj_pessoal/banner.png'%}" alt="banner" class="banner">
+    </div>
+
+    <div class="slider">
+
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <input type="radio" name="radio-btn" id="radio6">
+
+            <div class="slide prim">
+                <p>Minha jornada pela vida iniciou em Ponta Grossa - Pr, onde vivi parte da minha infância. Com 7 anos de idade me mudei para Guarapuava - Pr, cidade na qual passei grande parte da minha vida.</p>
+                <img src="{% static 'img/traj_pessoal/pin.png' %}" alt="Localização">
+            </div>
+            <div class="slide">
+                <p>Desde criança gosto muito saber como as coisas funcionam. Desmontar um carrinho de controle remoto e ficar olhando para as peças tentando entender como aquilo funcionava? Eu adorava. Hoje, parte dessa criança ainda vive dentro mim, porém hoje não quero somente saber como as coisas 
+                funcionam, mas sim botar a mão na massa e fazer acontecer.</p>
+                <img src="{% static 'img/traj_pessoal/hammer.png'%}" alt="Martelo">
+            </div>
+            <div class="slide">
+                <p>Faltando pouco para iniciar o ensino médio, me deparei com uma das primeiras grandes escolhas da minha vida. Fazer o ensino médio normal ou fazer integrado com curso técnico? Decidi fazer o curso técnico na área de Eletromecânica por me identificar com a área. Nesse ponto, já tinha a ideia de cursar Engenharia Elétrica e estabeleci isso como minha meta.</p>
+                <img src="{% static 'img/traj_pessoal/compass.png' %}" alt="Bússola">
+            </div>
+            <div class="slide dado">
+                <p>Esportes? Pratiquei alguns durante minha vida. Na minha infância gostava muito de jogar futebol, porém com o tempo fui passando a gostar mais de outros. Pratiquei Jiu-Jitsu durante alguns meses, mas foi no vôlei que me encontrei. Joguei pelo time do colégio que estudei no ensino médio, chegando a competir em outras cidades do Paraná representando Guarapuava.</p>
+                <img src="{% static 'img/traj_pessoal/dice.png'%}" alt="Dado">
+            </div>
+            <div class="slide">
+                <p>Ainda no ensino médio, participei de dois projetos na área de automação e IOT. Um dos projetos foi um alimentador de animais domésticos controlado por aplicativo de celular e outro um irrigador automático funcionando a partir da umidade do solo. Ali tive meu primeiro contanto com essa área e também com a programação. Resultado disso? Percebi que isso é o que eu gosto e também que quero focar nessa área durante minha formação.</p>
+                <img src="{% static 'img/traj_pessoal/bulb.png'%}" alt="Bola">
+            </div>
+            <div class="slide">
+                <p>A meta de cursar Engenharia Elétrica foi alcançada e hoje moro em Curitiba - Pr. Uma etapa difícil, por ficar longe de familiares e amigos, mas também com muitos aprendizados e experiências boas. Ao entrar na faculdade, o gosto por esportes continuou e entrei para o time de Valorant (jogo eletrônico) da atlética de Engenharia, sendo capitão de equipe.</p>
+                <img src="{% static 'img/traj_pessoal/target.png'%}" alt="Objetivo">
+            </div>
+
+            <div class="auto">
+                <div class="btn1"></div>
+                <div class="btn2"></div>
+                <div class="btn3"></div>
+                <div class="btn4"></div>
+                <div class="btn5"></div>
+                <div class="btn6"></div>
+            </div>
+
+        </div>
+        <div class="manual-nav">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+            <label for="radio6" class="manual-btn"></label>
+        </div>
+
+    </div>
+{%endblock%}
