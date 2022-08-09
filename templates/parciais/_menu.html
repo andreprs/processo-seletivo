@@ -1,0 +1,18 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static '/css/menu_horizontal.css' %}">
+
+<div>
+    <nav id="menu">
+        <div class="logo">
+            <a href="/">
+                <img src="{% static 'img/home/logo.png' %}" alt="Assinatura">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/" id="sobre-mim">Sobre mim</a></li>
+            <li><a href="/pessoal" id="traj-pessoal">Tragetória pessoal</a></li>
+            <li><a href="/profissional" id="traj-profissional">Trajetório profissional</a></li>
+        </ul>
+    </nav>
+</div>

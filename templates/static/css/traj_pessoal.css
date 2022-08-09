@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap');
+
+.banner{
+    width: 100%;
+}
+
+.slider {
+    position: relative;
+    margin: 40px;
+    margin-top: -50px;
+    height: 450px;
+    overflow: hidden;
+    background-color: #e5e9f0;
+    border-radius: 20px;
+}
+
+.slides {
+    width: 600%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #3b4252;
+    position: relative;
+    margin-top: 60px;
+    padding-left: 100px;
+    line-height: 32px;
+    top: 25%;
+    text-align: justify;
+}
+
+.slide {
+    width: 17%;
+    position: relative;
+    display: flex;
+    transition: 1s;
+}
+
+.slide img {
+    margin-top: 30px;
+    margin-right: 80px;
+    width: 300px;
+    height: 300px;
+}
+
+.dado img {
+    margin-top: 70px;
+    width: 250px;
+    height: 250px;
+}
+
+.dado p {
+    padding-right: 40px;
+}
+
+.manual-nav {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #3b4252;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.manual-btn:hover {
+    background-color: #4c566a;
+}
+
+#radio1:checked ~ .prim {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .prim {
+    margin-left: -17%;
+}
+
+#radio3:checked ~ .prim {
+    margin-left: -34%;
+}
+
+#radio4:checked ~ .prim {
+    margin-left: -51%;
+}
+
+#radio5:checked ~ .prim {
+    margin-left: -68%;
+}
+
+#radio6:checked ~ .prim {
+    margin-left: -85%;
+}
+
+.auto div {
+    border: 2px solid #3b4252;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: 1s;
+}
+
+.auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.auto div:not(:last-child) {
+    margin-right: 20px;
+}
+
+#radio1:checked ~ .auto .btn1 {
+    background-color: #3b4252;
+}
+
+#radio2:checked ~ .auto .btn2 {
+    background-color: #3b4252;
+}
+
+#radio3:checked ~ .auto .btn3 {
+    background-color: #3b4252;
+}
+
+#radio4:checked ~ .auto .btn4 {
+    background-color: #3b4252;
+}
+
+#radio5:checked ~ .auto .btn5 {
+    background-color: #3b4252;
+}
+
+#radio6:checked ~ .auto .btn6 {
+    background-color: #3b4252;
+}
